@@ -34,7 +34,7 @@ public class MemberServiceIntegrationTest {
         Long saveId = memberService.join(member);
 
         //Then
-        Member findMember = memberRepository.findbyId(saveId).get();
+        Member findMember = memberRepository.findById(saveId).get();
         assertEquals(member.getName(), findMember.getName()); // 확인
 
     }
